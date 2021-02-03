@@ -17,7 +17,7 @@ def __init__():
 		res = requests.request("GET", url).text
 	
 	import_airports(res)
-	##list_airports(airports)
+	list_airports(airports)
 
 
 def import_airports(res):
