@@ -40,6 +40,7 @@ class Menu:
 		
 		
 	def _exit(self):
+		clear()
 		exit()
 		
 	
