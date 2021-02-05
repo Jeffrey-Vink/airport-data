@@ -1,3 +1,4 @@
-import menu,airport
+from menu import *
+import airport
 
-menu = Menu()
+_menu = Menu()
