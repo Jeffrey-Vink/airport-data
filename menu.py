@@ -21,11 +21,13 @@ class Menu:
 	
 	
 	def invalid_menu_choice(self):
+		clear()
 		print("Invalid input, type 'help' to view valid options")
 		self.main()
 	
 		
 	def help(self):
+		clear()
 		print("Menu options:\n\thelp - brings up this menu")
 		print("\tlist - displays all airports")
 		print("\texit - stops the application")
@@ -48,3 +50,7 @@ class Menu:
 			res = requests.request("GET", url).text
 	
 		import_airports(res)
+		
+		
+def clear(): 
+    print('\033c')
