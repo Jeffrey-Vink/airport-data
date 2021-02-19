@@ -34,6 +34,8 @@ class Airport:
 		print(self.name+": "+self.iata)
 		print("\tLocation: "+self.latitude+", "+self.longitude)
 		print("\tType: "+self.type)
+		print("\tTimezone: "+self.timezone)
+        ##print("\tTimezone: "+self.timezone)
 		
 		
 def import_airports(res):
