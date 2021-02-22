@@ -27,7 +27,6 @@ class Airport:
 		self.tz = _airport[11]
 		self.type = _airport[12]
 		self.source = _airport[13]
-		airports.append(self)
 		
 		
 	def list_airport(self):
@@ -35,7 +34,7 @@ class Airport:
 		print("\tLocation: "+self.latitude+", "+self.longitude)
 		print("\tType: "+self.type)
 		print("\tTimezone: "+self.timezone)
-        ##print("\tTimezone: "+self.timezone)
+		print("\tDST: "+self.dst)
 		
 		
 def import_airports(res):
